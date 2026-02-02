@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<title>Valentine</title>
+<style>
+body{margin:0;display:grid;place-items:center;height:100vh;font-family:system-ui;background:#ffdde1}
+.card{background:white;padding:20px;border-radius:20px;text-align:center}
+button{padding:14px 20px;font-size:18px;border-radius:14px;border:none}
+#no{position:absolute}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>Hina, will you be my Valentine? 💘</h1>
+<button onclick="location.href='yes.html'">YES 💖</button>
+<button id="no">NO 🙃</button>
+</div>
+
+<script>
+const no=document.getElementById("no");
+setInterval(()=>{
+no.style.left=Math.random()*80+"vw";
+no.style.top=Math.random()*80+"vh";
+},500);
+</script>
+</body>
+</html>
